@@ -1,0 +1,154 @@
+font-awesome link
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+--------------------------------------------------------
+google-maps
+<iframe style="width: 600px; height: 400px; border: 0px;" src="https://www.google.com/maps/embed" frameborder="0"></iframe>
+-----------------------------------------------------------------------------------
+Object-fits css
+    object-fit: cover;
+    object-fit: fill;
+    object-fit: contain;
+----------------------------------------------------------------------
+
+Emoji codes
+work - window + (+)
+&#128526
+
+----------------------------------------------------------------------
+drop-shadow
+    filter: drop-shadow(0 0 5px cyan);
+
+----------------------------------------------------------------
+xiralashtirish 
+    backdrop-filter: blur(10px);
+
+----------------------------------------------------------------
+overflows
+overflow: hidden;
+overflow: visible;
+overflow: scroll;
+overflows: auto;
+
+----------------------------------------------------------------
+Animated icons web sites
+
+lottieflow.com
+lottiefile.com
+lordicon.com
+useanimation.com
+----------------------------------------------------------------
+errorlens
+
+-----------------------------------------------------------
+marque
+animation text
+direction up, right
+mix-blend-mode multiply
+
+
+// const cardInformation = [
+//     {
+//         name: "Tova Kukmara Granit Ultra, <br> alonadigan tutqich bilan",
+//         rate: `<span class="material-symbols-outlined">star_rate</span> 4.9 (151 shaxs)`,
+//         image: "/img/1.jpg",
+//         month: "21 700 so'm/oyiga"
+//     },
+// ]
+
+
+
+
+// let card = document.createElement("div");
+// let productimg = document.createElement("div");
+// let productpicture = document.createElement("img");
+// let like = document.createElement("span");
+// let cards = document.querySelector(".cards");
+// let aboutproduct = document.createElement("div");
+// let productName = document.createElement("p")
+// let rate = document.createElement("p")
+// let month = document.createElement("p")
+// let productprice = document.createElement("div")
+// let prices = document.createElement("div")
+// let before = document.createElement("del")
+// let after = document.createElement("h2")
+
+
+
+
+// cardInformation.forEach((info) => {
+//     productName.innerHTML = info.name;
+//     rate.innerHTML = info.rate;
+//     month.innerHTML = info.month;
+// });
+
+// card.classList.add("card");
+// productimg.classList.add("productimg");
+// like.classList.add("material-symbols-outlined");
+// aboutproduct.classList.add("about-product");
+// productName.classList.add("product-name")
+// rate.classList.add("rate")
+// month.classList.add("month")
+// productprice.classList.add("product-price")
+
+
+
+
+
+// like.textContent = "favorite";
+
+// productpicture.src = cardInformation[0].image
+
+
+// cards.appendChild(card);
+// card.appendChild(productimg);
+// productimg.appendChild(productpicture);
+// productimg.appendChild(like);
+// card.appendChild(aboutproduct)
+// aboutproduct.appendChild(productName)
+// aboutproduct.appendChild(rate)
+// aboutproduct.appendChild(month)
+// aboutproduct.appendChild(productprice)
+// productprice.appendChild(before)
+// productprice.appendChild(after)
+
+
+
+
+// const apiURL = 'https://66df1f57de4426916ee3a36c.mockapi.io/cars'
+
+// async function fetchData() {
+//     let response = await fetch(apiURL)
+//     let cars = await response.json()
+//     DisplayCars(cars)
+// }
+// function DisplayCars(cars) {
+//     let carList = document.getElementById("carList")
+//     carList.innerHTML = ""
+//     cars.map((car) =>{
+//         let li = createElement("li")
+//         li.innerHTML = `
+
+//         `
+//     })
+// }
+// fetchData()
+
+// async function AddCard(model, avatar, marka, probek, narxi, rangi) {
+//     let response = await fetch(apiUrl, {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify({
+//             model,
+//             avatar,
+//             marka,
+//             probek,
+//             narxi,
+//             rangi
+//         })
+//     })
+//     await response.json()
+//     fetchdata()
+// };
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="addProduct">
+        <h3>Mahsulot qo'shish</h3>
+        <div class="imgproduct"></div>
+        <input type="text" placeholder="Mahsulotning rasmi (URL)" id="productpic">
+        <input type="text" placeholder="Mahsulotning nomi" id="productname">
+        <input type="text" placeholder="Mahsulotning qiymati (UZS)" id="productprice">
+        <button id="addProduct">Qo'shish</button>
+    </div>
+    <div class="filter">
+
+
+        <div class="first-bar">
+            <div class="location">
+                <div class="loc1">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <p>Shahar: <a href="#">Toshkent</a></p>
+                </div>
+                <div class="loc2">
+                    <p>Topshirish punktlari</p>
+                </div>
+            </div>
+            <div class="language">
+                <button id="sale" style="color: #7000ff; cursor: pointer; height: 100%; border: none; background: none;">Uzumda soting</button>
+                <p>Savol javoblar</p>
+                <p>Buyurtmalarim</p>
+                <p>
+                <div class="uzb-flag"></div> O'zbekcha</p>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <img src="/img/uzum logo.png" alt="">
+            <div class="search-bar">
+                <button id="katalog">
+                    <div class="cat-icon"></div> Katalog
+                </button>
+                <div class="search">
+                    <input type="text" placeholder="Mahsulotni turkum bo'yicha izlash">
+                    <button>
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="navbar-buttons">
+                <button class="user"><span class="material-symbols-outlined">person</span> Kirish</button>
+                <button class="like"><span class="material-symbols-outlined">favorite</span>Saralangan</button>
+                <button class="cart"><span class="material-symbols-outlined">shopping_bag</span> Savat</button>
+            </div>
+        </div>
+
+        <div class="catalog">
+            <button>
+                <div style="width: 20px; height: 20px; background: #e5e5ff; border-radius: 30%;"></div>Arzon narxlar
+            </button>
+            <button>
+                <div style="width: 20px; height: 20px; background: #e5e5ff; border-radius: 30%;"></div>Nasiya
+            </button>
+            <button>
+                <div style="width: 20px; height: 20px; background: #e5e5ff; border-radius: 30%;"></div>Kuzgi kolleksiya
+            </button>
+            <button>
+                <div style="width: 20px; height: 20px; background: #e5e5ff; border-radius: 30%;"></div>Texnika
+                yarmarkasi
+            </button>
+            <div class="catalog-element">
+                <div class="after"></div>
+                <p>Elektronika</p>
+            </div>
+            <div class="catalog-element">
+                <div class="after"></div>
+                <p>Mayishiy texnika</p>
+            </div>
+            <div class="catalog-element">
+                <div class="after"></div>
+                <p>Kiyim</p>
+            </div>
+            <div class="catalog-element">
+                <div class="after"></div>
+                <p>Poyabzallar</p>
+            </div>
+            <div class="catalog-element">
+                <div class="after"></div>
+                <p>Aksessuarlar</p>
+            </div>
+            <div class="catalog-element">
+                <div class="after"></div>
+                <p>Go'zallik va parvarish</p>
+            </div>
+
+            <div class="catalog-element-down">
+                <p>Yana</p> <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+        </div>
+        <div class="carusel-container">
+            <div class="carousel">
+                <button id="left-carousel-button"><span
+                        class="material-symbols-outlined">keyboard_arrow_left</span></button>
+                <img id="img-carousel" src="" alt="">
+                <button id="right-carousel-button"><span
+                        class="material-symbols-outlined">keyboard_arrow_right</span></button>
+
+            </div>
+        </div>
+        <div class="container">
+            <h1>Mashhur <span id="right" class="material-symbols-outlined">keyboard_arrow_right</span></h1>
+            <div class="cards">
+
+
+                <!-- <div class="card">
+                <div class="productimg">
+                    <img src="/img/1.jpg" alt="">
+                    <span class="material-symbols-outlined">
+                        favorite
+                    </span>
+                </div>
+                <div class="about-product">
+                    <p id="product-name">Tova Kukmara Granit Ultra, <br> alonadigan tutqich bilan</p>
+                    <p id="rate"><span class="material-symbols-outlined">star_rate</span> 4.9 (151 shaxs)</p>
+                    <p id="month">21 700 so'm/oyiga</p>
+                    <div id="product-price">
+                        <div class="prices">
+                            <del>248 000</del>
+                            <h2>186 000</h2>
+                        </div>
+                        <button id="basket">
+                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+
+
+            </div>
+            <div style="display: flex; justify-content: center;"><button id="more">Yana ko'rsatish 10</button></div>
+        </div>
+    </div>
+    <!--  -->
+    <script src="/main.js"></script>
+</body>
+
+</html>
+
+<!-- <a data-v-679360e5="" href="https://uzum.uz/uz/product/pylesos-magna-vch2314yb-1194403?srsltid=AfmBOoovd-iAyyi-BFnKFlqwEhib3MkxxDJ6IJxiyD2TVPUYEuE0tXKW" class="slide"><img data-v-679360e5="" src="https://images.uzum.uz/crbgrcc2gps3jqbev5cg/main_page_banner.jpg" alt="Uzum aksiyalari, mahsulotlar termasi va xabarlari"></a>-->

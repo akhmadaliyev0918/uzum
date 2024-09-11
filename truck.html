@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .truck-button .default,
+    .truck-button .success {
+        display: block;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        opacity: var(--o, 1);
+        transition: opacity 0.3s;
+    }
+
+    .truck-button .success {
+        position: absolute;
+        top: 12px;
+        left: 0;
+        right: 0;
+        opacity: 0;
+    }
+
+    .truck-button.animation {
+        --rx: -90deg;
+        --br: 0;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin: 20px;
+    }
+</style>
+
+<body>
+    <button class="truck-button">
+        <span class="default">
+            Complete Order
+        </span>
+        <span class="success">
+            Order Placed
+            <svg viewbox="0 0 12 10">
+                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+            </svg>
+        </span>
+        <div class="truck">
+            <div class="wheel"></div>
+            <div class="back"></div>
+            <div class="front"></div>
+            <div class="box"></div>
+        </div>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js">
+        function animateBox() {
+  // "box" elementini o'zgartiramiz
+  gsap.to(".box", {
+    duration: 2,         // Animatsiya davomiyligi 2 soniya
+    x: 300,              // X yo'nalishda 300px ga ko'chish
+    y: 150,              // Y yo'nalishda 150px ga ko'chish
+    rotation: 360,       // Elementni 360 gradus aylantirish
+    backgroundColor: "#00FF00", // Orqa fon rangini yashilga o'zgartirish
+    borderRadius: "50%", // Burchaklarini dumaloqlash
+    ease: "power1.inOut" // Animatsiyani silliq o'tkazish
+  });
+}
+
+// 2. Animatsiyani ishga tushirish uchun sahifa yuklanganda chaqiramiz
+document.addEventListener("DOMContentLoaded", animateBox);
+    </script>
+</body>
+
+</html>
